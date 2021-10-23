@@ -1,0 +1,85 @@
+body{
+    main{
+        .third{
+            padding: 3rem 0;
+            background-color: $Light-Grayish-Blue;
+            .third-container{
+                text-align: center;
+                max-width: 85%;
+                margin: 0 auto;
+                .heading{
+                    margin-bottom: 3rem;
+                    h1{
+                        font-size: 1.7rem;
+                        font-weight: 400;
+                        color: $Dark-Blue;
+                        margin-bottom: 1rem;
+                    }
+                    p{
+                        font-size: 0.8rem;
+                        color: $Grayish-Blue;
+                        line-height: 1.2rem;
+                        font-weight: 400;
+                    }
+                }
+                .flex-box{
+                    display: flex;
+                    // align-items: center;
+                    // justify-content: center;
+                    flex-direction: column;
+                    gap: 2rem;
+                    .element{
+                        img{
+                            height: 3.8rem;
+                            margin-bottom: 1rem;
+                        }
+                        h3{
+                            font-size: 1.1rem;
+                            font-weight: 400;
+                            color: $Dark-Blue;
+                            margin-bottom: 1rem;
+                        }
+                        p{
+                            color: $Grayish-Blue;
+                            font-size: 0.8rem;
+                            line-height: 1.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 600px){
+    body{
+        main{
+            .third{
+                padding:5rem 8rem;
+                .third-container{
+                    text-align: left;
+                    max-width: 100%;
+                    .heading{
+                        margin-bottom: 4rem;
+                        h1{
+                            font-size: 2rem;
+                        }
+                        p{
+                            font-size: 0.95rem;
+                            max-width: 53%;
+                            line-height: 1.5rem;
+                        }
+                    }
+                    .flex-box{
+                        flex-direction: row;
+                        gap: 1.5rem;
+                        .element{
+                            p{
+                                max-width: 84%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
